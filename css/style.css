@@ -503,6 +503,15 @@
 					background: #df93b8;
 				}
 
+				.icon.circle.ai-researchgate {
+					background: #da83ae;
+					color: white;
+				}
+
+				.icon.circle.ai-researchgate:hover {
+					background: #df93b8;
+				}
+
 		/*.icon.featured {
 			cursor: default;
 			display: block;
