@@ -562,6 +562,15 @@
 			background: #df7b77;
 		}
 
+		.icon2.circle.ai-google-scholar {
+			background: #db6b67;
+			color: white;
+		}
+
+		.icon2.circle.ai-google-scholar:hover {
+			background: #7fb7d2;
+		}
+
 .icon > .label {
 	display: none;
 }
