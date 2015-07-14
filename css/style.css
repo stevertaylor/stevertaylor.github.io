@@ -1,3 +1,4 @@
+@import url("academicons.css");
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
 
@@ -489,9 +490,18 @@
 					color: white;
 				}
 
-					.icon.circle.fa-linkedin:hover {
-						background: #df93b8;
-					}
+				.icon.circle.fa-linkedin:hover {
+					background: #df93b8;
+				}
+
+				.icon.circle.ai-arxiv {
+					background: #da83ae;
+					color: white;
+				}
+
+				.icon.circle.ai-arxiv:hover {
+					background: #df93b8;
+				}
 
 		/*.icon.featured {
 			cursor: default;
