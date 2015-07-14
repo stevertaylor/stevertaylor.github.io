@@ -1684,8 +1684,8 @@
   position: relative;
   left: 50%;
   top: 50%;
-  margin-left: 12px;
-  margin-top: 12px;
+  margin-left: -12px;
+  margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
   background: #75ce66;
@@ -1779,7 +1779,7 @@
   margin-left: 60px;
   background: white;
   border-radius: 0.25em;
-  padding: 1em;
+  padding: 5em;
   box-shadow: 0 3px 0 #d7e4ed;
 }
 .cd-timeline-content:after {
