@@ -545,21 +545,21 @@
 		}
 
 		.icon2.circle.ai-arxiv {
-			background: #da83ae;
+			background: #7490c3;
 			color: white;
 		}
 
 		.icon2.circle.ai-arxiv:hover {
-			background: #df93b8;
+			background: #829bc9;
 		}
 
 		.icon2.circle.ai-researchgate {
-			background: #da83ae;
+			background: #db6b67;
 			color: white;
 		}
 
 		.icon2.circle.ai-researchgate:hover {
-			background: #df93b8;
+			background: #df7b77;
 		}
 
 .icon > .label {
