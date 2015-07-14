@@ -516,18 +516,6 @@
 				line-height: 1em;
 			}
 */
-.ai {
-	display:inline-block;
-	font:normal normal normal 14px/1 Academicons;
-	font-size:inherit;
-	text-rendering:auto;
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-}
-
-.ai-arxiv:before {
-	content: "\e612";
-}
 
 .icon > .label {
 	display: none;
