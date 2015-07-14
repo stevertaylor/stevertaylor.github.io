@@ -508,6 +508,97 @@
 			}
 */
 
+.iconhead {
+	position: relative;
+}
+
+	.iconhead:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+
+	.iconhead.circle {
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border: 0;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 1.25em;
+		height: 2.25em;
+		left: 0;
+		line-height: 2.25em;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		width: 2.25em;
+	}
+
+		.iconhead.circle:hover {
+			top: -0.2em;
+		}
+
+		.iconhead.circle.fa-twitter {
+			background: #A8A8A8;
+			color: white;
+		}
+
+			.iconhead.circle.fa-twitter:hover {
+				background: #A8A8A8;
+			}
+
+		.iconhead.circle.fa-facebook {
+			background: #A8A8A8;
+			color: white;
+		}
+
+			.iconhead.circle.fa-facebook:hover {
+				background: #A8A8A8;
+			}
+
+		.iconhead.circle.fa-google-plus {
+			background: #A8A8A8;
+			color: white;
+		}
+
+			.iconhead.circle.fa-google-plus:hover {
+				background: #A8A8A8;
+			}
+
+		.iconhead.circle.fa-github {
+			background: #A8A8A8;
+			color: white;
+		}
+
+			.iconhead.circle.fa-github:hover {
+				background: #A8A8A8;
+			}
+
+		.iconhead.circle.fa-dribbble {
+			background: #A8A8A8;
+			color: white;
+		}
+
+			.iconhead.circle.fa-dribbble:hover {
+				background: #A8A8A8;
+			}
+
+			.iconhead.circle.fa-linkedin {
+				background: #A8A8A8;
+				color: white;
+			}
+
+			.iconhead.circle.fa-linkedin:hover {
+				background: #A8A8A8;
+			}
+
+
 .icon2 {
 	position: relative;
 }
@@ -571,11 +662,84 @@
 			background: #7490c3;
 		}
 
+
+		.icon2head {
+			position: relative;
+		}
+
+			.icon2head:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: Academicons;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			.icon2head.circle {
+				-moz-transition: all 0.2s ease-in-out;
+				-webkit-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease-in-out;
+				transition: all 0.2s ease-in-out;
+				border: 0;
+				border-radius: 100%;
+				display: inline-block;
+				font-size: 1.25em;
+				height: 2.25em;
+				left: 0;
+				line-height: 2.25em;
+				text-align: center;
+				text-decoration: none;
+				top: 0;
+				width: 2.25em;
+			}
+
+				.icon2head.circle:hover {
+					top: -0.2em;
+				}
+
+				.icon2head.circle.ai-arxiv {
+					background: #A8A8A8;
+					color: white;
+				}
+
+				.icon2head.circle.ai-arxiv:hover {
+					background: #A8A8A8;
+				}
+
+				.icon2head.circle.ai-researchgate {
+					background: #A8A8A8;
+					color: white;
+				}
+
+				.icon2head.circle.ai-researchgate:hover {
+					background: #A8A8A8;
+				}
+
+				.icon2head.circle.ai-google-scholar {
+					background: #A8A8A8;
+					color: white;
+				}
+
+				.icon2head.circle.ai-google-scholar:hover {
+					background: #A8A8A8;
+				}
+
+
 .icon > .label {
 	display: none;
 }
 
+.iconhead > .label {
+	display: none;
+}
+
 .icon2 > .label {
+	display: none;
+}
+
+.icon2head > .label {
 	display: none;
 }
 
