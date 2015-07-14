@@ -411,11 +411,6 @@
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
-			src:url('fonts/academicons.eot?j69par');
-			src:url('fonts/academicons.eot?#iefixj69par') format('embedded-opentype'),
-					url('fonts/academicons.woff?j69par') format('woff'),
-					url('fonts/academicons.ttf?j69par') format('truetype'),
-					url('fonts/academicons.svg?j69par#academicons') format('svg');
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
