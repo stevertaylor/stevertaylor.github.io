@@ -363,7 +363,7 @@
 				display: block;
 				width: 100%;
 			}
-               /* .image.icon {
+               .image.icon {
                         -moz-perspective: 500px;
                         -webkit-perspective: 500px;
                         -o-perspective: 500px;
@@ -399,7 +399,7 @@
         span.image.icon {
                 cursor: default;
         }
-*/
+
 
 
 /* Icon */
