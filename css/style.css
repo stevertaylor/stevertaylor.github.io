@@ -1921,6 +1921,9 @@
 .cd-timeline-img.cd-location {
 	background: #f0ca45;
 }
+.cd-timeline-img.cd-physics {
+	background: #f0ca45;
+}
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-img {
 		width: 60px;
