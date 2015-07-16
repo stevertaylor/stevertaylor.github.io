@@ -1924,6 +1924,9 @@
 .cd-timeline-img.cd-physics {
 	background: #f0ca45;
 }
+.cd-timeline-img.cd-astro {
+	background: #75ce66;
+}
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-img {
 		width: 60px;
