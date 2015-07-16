@@ -1921,32 +1921,13 @@
 .cd-timeline-img.cd-location {
 	background: #f0ca45;
 }
-
-.cd-timeline-img2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-.cd-timeline-img2 img {
-	display: block;
-	width: 34px;
-	height: 34px;
-	position: relative;
-	left: 50%;
-	top: 50%;
-	margin-left: -12px;
-	margin-top: -12px;
-}
-.cd-timeline-img2.cd-physics {
+.cd-timeline-img.cd-physics {
 	background: #f0ca45;
 }
-.cd-timeline-img2.cd-astro {
+.cd-timeline-img.cd-astro {
 	background: #75ce66;
 }
+
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-img {
 		width: 60px;
