@@ -1921,10 +1921,21 @@
 .cd-timeline-img.cd-location {
 	background: #f0ca45;
 }
-.cd-timeline-img.cd-physics {
+
+.cd-timeline-img2 img {
+	display: block;
+	width: 34px;
+	height: 34px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -12px;
+	margin-top: -12px;
+}
+.cd-timeline-img2.cd-physics {
 	background: #f0ca45;
 }
-.cd-timeline-img.cd-astro {
+.cd-timeline-img2.cd-astro {
 	background: #75ce66;
 }
 @media only screen and (min-width: 1170px) {
