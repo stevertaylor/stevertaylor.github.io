@@ -1927,6 +1927,9 @@
 .cd-timeline-img.cd-astro {
 	background: #75ce66;
 }
+.cd-timeline-img.cd-planet {
+	background: #c03b44;
+}
 
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-img {
