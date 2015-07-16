@@ -1842,8 +1842,8 @@
 	padding: 2em 0;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	margin-left: 5em;
-	margin-right: 5em;
+	margin-left: 4em;
+	margin-right: 4em;
 }
 #cd-timeline::before {
 	/* this is the vertical line */
@@ -1897,8 +1897,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
