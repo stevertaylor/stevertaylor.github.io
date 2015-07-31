@@ -1521,14 +1521,14 @@
 				margin: 2em 0 0 0;
 			}
 
-			/* Banner2 */
+			/* banner_research */
 				@-moz-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 				@-webkit-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 				@-o-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 				@-ms-keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 				@keyframes reveal-banner { 0% { opacity: 0; } 100% { opacity: 1; } }
 
-				#banner2 {
+				#banner_research {
 					background-attachment: scroll, scroll, scroll, fixed;
 					background-color: #645862;
 					background-image: url("../images/light-bl.svg"), url("../images/light-br.svg"), url("../images/overlay.png"), url("../images/research_clutter.jpg");
@@ -1541,7 +1541,7 @@
 					text-align: center;
 				}
 
-					#banner2 .inner {
+					#banner_research .inner {
 						-moz-animation: reveal-banner 1s 0.25s ease-in-out;
 						-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
 						-o-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -1560,7 +1560,7 @@
 						text-align: center;
 					}
 
-						#banner2 .inner header {
+						#banner_research .inner header {
 							display: inline-block;
 							border-bottom: solid 2px;
 							border-top: solid 2px;
@@ -1568,7 +1568,7 @@
 							padding: 3px 0 3px 0;
 						}
 
-							#banner2 .inner header h2 {
+							#banner_research .inner header h2 {
 								border-bottom: solid 2px;
 								border-top: solid 2px;
 								font-size: 2.5em;
@@ -1580,19 +1580,19 @@
 								text-transform: uppercase;
 							}
 
-						#banner2 .inner p {
+						#banner_research .inner p {
 							letter-spacing: 0.1em;
 							margin: 0;
 							text-transform: uppercase;
 						}
 
-							#banner2 .inner p a {
+							#banner_research .inner p a {
 								color: inherit;
 								font-weight: 400;
 								text-decoration: none;
 							}
 
-						#banner2 .inner footer {
+						#banner_research .inner footer {
 							margin: 2em 0 0 0;
 						}
 
