@@ -1538,7 +1538,7 @@
 					color: white;
 					cursor: default;
 					padding: 6em 0;
-					text-align: center;
+					text-align: right;
 				}
 
 					#banner_welcome .inner {
@@ -1556,8 +1556,8 @@
 						color: white;
 						display: inline-block;
 						opacity: 0;
-						padding: 8em;
-						text-align: right;
+						padding: 3em;
+						text-align: center;
 					}
 
 						#banner_welcome .inner header {
