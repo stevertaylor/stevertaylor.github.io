@@ -540,6 +540,15 @@
 		width: 2.25em;
 	}
 
+	.iconhead.circle.fa-envelope {
+		background: #A8A8A8;
+		color: white;
+	}
+
+		.iconhead.circle.fa-envelope:hover {
+			background: #A8A8A8;
+		}
+
 		.iconhead.circle:hover {
 			top: -0.2em;
 		}
