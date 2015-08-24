@@ -440,6 +440,15 @@
 				top: -0.2em;
 			}
 
+			.icon.circle.fa-envelope {
+				background: #7490c3;
+				color: white;
+			}
+
+				.icon.circle.fa-envelope:hover {
+					background: #829bc9;
+				}
+
 			.icon.circle.fa-twitter {
 				background: #70aecd;
 				color: white;
