@@ -1,0 +1,127 @@
+/* Custom styles for Dr. Stephen Taylor's website */
+/* Full-page animated gravitational wave background */
+
+/* Fix profile image aspect ratio */
+.profile .profile_inner img {
+    object-fit: cover;
+    object-position: center top;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 40px 15px rgba(100, 150, 255, 0.4);
+}
+
+/* Full page cosmic background */
+body.home-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    background: radial-gradient(ellipse at center,
+            rgba(15, 15, 35, 1) 0%,
+            rgba(5, 5, 20, 1) 50%,
+            rgba(0, 0, 10, 1) 100%);
+}
+
+/* Canvas for animated background */
+#gw-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Make main content readable over dark background */
+body.home-page .main {
+    background: transparent;
+}
+
+body.home-page .profile {
+    background: transparent;
+}
+
+body.home-page h1,
+body.home-page .profile h1 {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(100, 150, 255, 0.5);
+}
+
+body.home-page .profile span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Links in profile subtitle should be visible */
+body.home-page .profile span a {
+    color: rgba(150, 200, 255, 1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+body.home-page .profile span a:hover {
+    color: rgba(200, 230, 255, 1);
+}
+
+/* Italicized roles in subtitle should be smaller */
+body.home-page .profile span em {
+    font-size: 0.9em;
+}
+
+/* Only the first italicized role gets vertical spacing from main title */
+body.home-page .profile span em:first-of-type {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+/* Style buttons for dark background */
+body.home-page .button {
+    background: rgba(100, 150, 255, 0.2);
+    border: 1px solid rgba(100, 150, 255, 0.5);
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+}
+
+body.home-page .button:hover {
+    background: rgba(100, 150, 255, 0.4);
+    border-color: rgba(150, 180, 255, 0.8);
+}
+
+/* Social icons */
+body.home-page .social-icons a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.home-page .social-icons a:hover {
+    color: rgba(150, 180, 255, 1);
+}
+
+/* Header styling for dark background */
+body.home-page #header,
+body.home-page header {
+    background: rgba(0, 0, 20, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+body.home-page #header a,
+body.home-page header a {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer styling */
+body.home-page footer {
+    background: rgba(0, 0, 20, 0.9);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+body.home-page footer a {
+    color: rgba(150, 180, 255, 0.9);
+}
+
+/* Remove the small circular background (we have full page now) */
+.profile-gw-background {
+    display: none;
+}
