@@ -23,6 +23,12 @@ Cross-listed introductory general relativity course covering:
 
 Cross-listed course on probability, statistical inference, data analysis, and machine learning. Highly interactive and centered around Jupyter notebooks. *Developed by Taylor.*
 
+📚 **Course Materials on GitHub:**
+- [Spring 2025](https://github.com/VanderbiltAstronomy/astr_8070_s25)
+- [Spring 2024](https://github.com/VanderbiltAstronomy/astr_8070_s24)
+- [Spring 2022](https://github.com/VanderbiltAstronomy/astr_8070_s22)
+- [Spring 2021](https://github.com/VanderbiltAstronomy/astr_8070_s21)
+
 ---
 
 ### ASTR 8001: Order of Magnitude Astrophysics
