@@ -26,7 +26,7 @@
         {{- end }}
         {{- if $isHome }}
         <!-- Full-page animated gravitational wave canvas -->
-        <canvas id="gw-canvas"></canvas>
+        <canvas id="gw-canvas" aria-hidden="true" role="presentation"></canvas>
         {{- end }}
         {{ partialCached "header.html" . .Page -}}
         <main class="main">

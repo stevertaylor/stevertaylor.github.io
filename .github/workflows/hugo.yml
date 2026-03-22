@@ -37,6 +37,15 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: |
+            ${{ runner.temp }}/hugo_cache
+            resources/_gen
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/*.md', 'hugo.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache

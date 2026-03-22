@@ -37,10 +37,7 @@ body.home-page::before {
 }
 
 /* Make main content readable over dark background */
-body.home-page .main {
-    background: transparent;
-}
-
+body.home-page .main,
 body.home-page .profile {
     background: transparent;
 }
@@ -124,4 +121,11 @@ body.home-page footer a {
 /* Remove the small circular background (we have full page now) */
 .profile-gw-background {
     display: none;
+}
+
+/* Disable animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    #gw-canvas {
+        display: none;
+    }
 }
