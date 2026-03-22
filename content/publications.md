@@ -5,6 +5,20 @@ draft: false
 description: "Links to my publication profiles"
 ---
 
+## Selected Highlights
+
+- **Agazie, G. et al. (NANOGrav)**, "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background," *The Astrophysical Journal Letters*, 951, L8 (2023). [arXiv:2306.16213](https://arxiv.org/abs/2306.16213)
+
+- **Agazie, G. et al. (NANOGrav)**, "The NANOGrav 15 yr Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational-wave Background," *The Astrophysical Journal Letters*, 952, L37 (2023). [arXiv:2306.16220](https://arxiv.org/abs/2306.16220)
+
+- **Taylor, S. R.**, *Nanohertz Gravitational Wave Astronomy*, CRC Press (2021). [ISBN: 9780367768621](https://www.routledge.com/Nanohertz-Gravitational-Wave-Astronomy/Taylor/p/book/9780367768621)
+
+- **Taylor, S. R. et al.**, "Are We There Yet? Time to Detection of Nanohertz Gravitational Waves Based on Pulsar-timing Array Limits," *The Astrophysical Journal Letters*, 819, L6 (2016). [arXiv:1511.05564](https://arxiv.org/abs/1511.05564)
+
+- **Taylor, S. R. et al.**, "Limits on Anisotropy in the Nanohertz Stochastic Gravitational Wave Background," *Physical Review Letters*, 115, 041101 (2015). [arXiv:1506.08817](https://arxiv.org/abs/1506.08817)
+
+---
+
 ## Publication Databases
 
 Find my complete publication record on the following platforms:

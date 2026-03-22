@@ -7,7 +7,9 @@ theme: "PaperMod"
 params:
   env: production
   author: "Stephen R. Taylor"
-  description: "Assistant Professor at Vanderbilt University | Gravitational Wave Astrophysicist | Chair, NANOGrav Collaboration"
+  description: "Associate Professor at Vanderbilt University | Gravitational Wave Astrophysicist | Chair, NANOGrav Collaboration"
+  images:
+    - "images/bio_pic.jpg"
   
   # Profile section on homepage
   profileMode:

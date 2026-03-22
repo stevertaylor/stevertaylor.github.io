@@ -5,11 +5,17 @@
     // Only run on home page
     if (!document.body.classList.contains('home-page')) return;
 
+    // Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReducedMotion.matches) return;
+
     const canvas = document.getElementById('gw-canvas');
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
     let width, height;
+    let animationId = null;
+    let paused = false;
 
     // Animation state
     let time = 0;
@@ -139,6 +145,8 @@
     }
 
     function animate() {
+        if (paused) return;
+
         // Clear canvas
         ctx.fillStyle = 'rgba(5, 5, 20, 1)';
         ctx.fillRect(0, 0, width, height);
@@ -150,8 +158,34 @@
         drawWaves();
 
         time++;
-        requestAnimationFrame(animate);
+        animationId = requestAnimationFrame(animate);
     }
+
+    // Pause when tab is hidden to save CPU/battery
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            paused = true;
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+            }
+        } else {
+            paused = false;
+            animate();
+        }
+    });
+
+    // Stop animation if user enables reduced motion mid-session
+    prefersReducedMotion.addEventListener('change', function (e) {
+        if (e.matches) {
+            paused = true;
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+                animationId = null;
+            }
+            canvas.style.display = 'none';
+        }
+    });
 
     // Initialize
     window.addEventListener('resize', resize);
