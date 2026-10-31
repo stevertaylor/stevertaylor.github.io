@@ -102,6 +102,16 @@
   tags: [nanohertz]
   selected: true
 
+- id: nanograv15binaries
+  title: "The NANOGrav 15 yr data set: constraints on supermassive black hole binaries from the gravitational-wave background"
+  authors: "NANOGrav Collaboration: G. Agazie, A. Anumarlapudi, A. M. Archibald, et al. (incl. **S. R. Taylor**)"
+  venue: "The Astrophysical Journal Letters 952, L37"
+  year: 2023
+  doi: "10.3847/2041-8213/ace18b"
+  arxiv: "2306.16220"
+  tags: [nanohertz, binaries]
+  selected: true
+
 - id: lamb2023
   title: "Rapid refitting techniques for Bayesian spectral characterization of the gravitational wave background using PTAs"
   authors: "W. G. Lamb, **S. R. Taylor**, R. van Haasteren"
@@ -161,6 +171,16 @@
   tags: [binaries]
   selected: true
 
+- id: taylor2016
+  title: "Are we there yet? Time to detection of nanohertz gravitational waves based on pulsar-timing array limits"
+  authors: "**S. R. Taylor**, M. Vallisneri, J. A. Ellis, C. M. F. Mingarelli, T. J. W. Lazio, R. van Haasteren"
+  venue: "The Astrophysical Journal Letters 819, L6"
+  year: 2016
+  doi: "10.3847/2041-8205/819/1/L6"
+  arxiv: "1511.05564"
+  tags: [nanohertz]
+  selected: true
+
 - id: lentati2015
   title: "European Pulsar Timing Array limits on an isotropic stochastic gravitational-wave background"
   authors: "L. Lentati, **S. R. Taylor**, C. M. F. Mingarelli, et al."
@@ -169,6 +189,16 @@
   doi: "10.1093/mnras/stv1538"
   arxiv: "1504.03692"
   role: "Core analysis team"
+  tags: [nanohertz]
+  selected: true
+
+- id: taylor2015
+  title: "Limits on anisotropy in the nanohertz stochastic gravitational-wave background"
+  authors: "**S. R. Taylor**, C. M. F. Mingarelli, J. R. Gair, A. Sesana, G. Theureau, S. Babak, et al."
+  venue: "Physical Review Letters 115, 041101"
+  year: 2015
+  doi: "10.1103/PhysRevLett.115.041101"
+  arxiv: "1506.08817"
   tags: [nanohertz]
   selected: true
 
