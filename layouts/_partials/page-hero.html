@@ -1,0 +1,12 @@
+<header class="page-hero{{ if .Params.heroImage }} has-media{{ end }}"{{ with .Params.heroOpacity }} style="--hero-opacity: {{ . }}"{{ end }}>
+  {{- with .Params.heroImage }}
+  <div class="page-hero-media" aria-hidden="true">
+    {{- partial "img.html" (dict "src" . "alt" "" "widths" (slice 960 1600 2200) "sizes" "100vw" "loading" "eager") }}
+  </div>
+  {{- end }}
+  <div class="container page-hero-inner">
+    {{- with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{- with .Description }}<p class="page-lede">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</header>

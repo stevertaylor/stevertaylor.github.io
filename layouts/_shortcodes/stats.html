@@ -1,0 +1,9 @@
+{{- /* Metric figures from the page's `metrics` front matter: {{< stats >}} */ -}}
+<div class="stats">
+  <dl class="stats-grid">
+    {{- range .Page.Params.metrics }}
+    <div class="stat"><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+    {{- end }}
+  </dl>
+  {{- with .Page.Params.metricsNote }}<p class="stats-note">{{ . }}</p>{{ end }}
+</div>

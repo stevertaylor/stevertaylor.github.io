@@ -1,11 +1,16 @@
-{{ define "main" }}
-<article class="post-single">
-    <header class="post-header">
-        <h1 class="post-title">Page Not Found</h1>
-    </header>
-    <div class="post-content">
-        <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
-        <p><a href="/">Return to the homepage</a></p>
+{{- define "main" }}
+<section class="error-page">
+  <div class="container">
+    <p class="eyebrow">Error 404</p>
+    <h1 class="page-title">Lost in spacetime</h1>
+    <p class="page-lede">
+      This page has drifted outside the observable universe — or it never existed in the first place.
+      Either way, the pulsar timing array can't locate it.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ "/" | relURL }}">Return to Earth{{ partial "icon.html" "arrow-right" }}</a>
+      <a class="btn btn-ghost" href="{{ "/research/" | relURL }}">Research</a>
     </div>
-</article>
-{{ end }}
+  </div>
+</section>
+{{- end }}

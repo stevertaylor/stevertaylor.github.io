@@ -1,0 +1,193 @@
+# Selected publications (source: CV, January 2026), newest first.
+# /research/ lists hand-picked entries by id ({{< pubs ids="a,b,c" >}}); tags allow {{< pubs tag="…" >}};
+# selected: true entries make up the list on /publications/.
+# Collaboration papers list authors alphabetically.
+
+- id: taylor2025
+  title: "The dawn of gravitational wave astronomy at light-year wavelengths: insights from pulsar timing arrays"
+  authors: "**S. R. Taylor**"
+  venue: "Astrophysics and Space Science 370, 124"
+  year: 2025
+  doi: "10.1007/s10509-025-04513-9"
+  arxiv: "2511.08966"
+  role: "Review"
+  tags: [nanohertz]
+  selected: true
+
+- id: schult2025
+  title: "Expectations for the first supermassive black-hole binary resolved by PTAs I: Model efficacy"
+  authors: "L. Schult, P. Petrov, **S. R. Taylor**, N. Pol, N. Laal, M. Charisi, C.-P. Ma"
+  venue: "Submitted to Physical Review D"
+  year: 2025
+  arxiv: "2510.01317"
+  tags: [binaries]
+
+- id: criswell2025
+  title: "Flexible spectral separation of multiple isotropic and anisotropic stochastic gravitational wave backgrounds in LISA"
+  authors: "A. W. Criswell, S. Banagiri, J. Lawrence, L. Schult, S. Rieck, **S. R. Taylor**, V. Mandic"
+  venue: "Submitted to The Astrophysical Journal"
+  year: 2025
+  arxiv: "2508.20308"
+  tags: [lisa]
+
+- id: laal2025gibbs
+  title: "Solving the PTA data analysis problem with a global Gibbs scheme"
+  authors: "N. Laal, **S. R. Taylor**, R. van Haasteren, W. G. Lamb, X. Siemens"
+  venue: "Physical Review D 111, 063067"
+  year: 2025
+  doi: "10.1103/PhysRevD.111.063067"
+  arxiv: "2410.11944"
+  tags: [methods]
+
+- id: laal2025emulator
+  title: "Deep neural emulation of the supermassive black hole binary population"
+  authors: "N. Laal, **S. R. Taylor**, L. Z. Kelley, J. Simon, K. Gültekin, et al."
+  venue: "The Astrophysical Journal 982, 55"
+  year: 2025
+  doi: "10.3847/1538-4357/adb4ef"
+  arxiv: "2411.10519"
+  tags: [methods, binaries]
+
+- id: gersbach2025
+  title: "Spatial and spectral characterization of the gravitational-wave background with the PTA optimal statistic"
+  authors: "K. A. Gersbach, **S. R. Taylor**, P. M. Meyers, J. D. Romano"
+  venue: "Physical Review D 111, 023027"
+  year: 2025
+  doi: "10.1103/PhysRevD.111.023027"
+  arxiv: "2406.11954"
+  tags: [nanohertz]
+
+- id: petrov2024
+  title: "Identifying the host galaxies of supermassive black hole binaries found by pulsar timing arrays"
+  authors: "P. Petrov, **S. R. Taylor**, M. Charisi, C.-P. Ma"
+  venue: "The Astrophysical Journal 976, 129"
+  year: 2024
+  arxiv: "2406.04409"
+  tags: [binaries]
+
+- id: lamb2024
+  title: "Spectral variance in a stochastic gravitational-wave background from a binary population"
+  authors: "W. G. Lamb, **S. R. Taylor**"
+  venue: "The Astrophysical Journal Letters 971, L10"
+  year: 2024
+  doi: "10.3847/2041-8213/ad654a"
+  arxiv: "2407.06270"
+  tags: [nanohertz]
+
+- id: shih2024
+  title: "Fast parameter inference on pulsar timing arrays with normalizing flows"
+  authors: "D. Shih, M. Freytsis, **S. R. Taylor**, J. A. Dror, N. Smyth"
+  venue: "Physical Review Letters 133, 011402"
+  year: 2024
+  doi: "10.1103/PhysRevLett.133.011402"
+  arxiv: "2310.12209"
+  tags: [methods]
+
+- id: charisi2024
+  title: "Efficient large-scale, targeted gravitational-wave probes of supermassive black-hole binaries"
+  authors: "M. Charisi, **S. R. Taylor**, C. A. Witt, J. Runnoe"
+  venue: "Physical Review Letters 132, 061401"
+  year: 2024
+  doi: "10.1103/PhysRevLett.132.061401"
+  tags: [binaries]
+
+- id: nanograv15
+  title: "The NANOGrav 15 yr data set: evidence for a gravitational-wave background"
+  authors: "NANOGrav Collaboration: G. Agazie, A. Anumarlapudi, A. M. Archibald, et al. (incl. **S. R. Taylor**)"
+  venue: "The Astrophysical Journal Letters 951, L8"
+  year: 2023
+  doi: "10.3847/2041-8213/acdac6"
+  arxiv: "2306.16213"
+  role: "Co-lead author"
+  tags: [nanohertz]
+  selected: true
+
+- id: lamb2023
+  title: "Rapid refitting techniques for Bayesian spectral characterization of the gravitational wave background using PTAs"
+  authors: "W. G. Lamb, **S. R. Taylor**, R. van Haasteren"
+  venue: "Physical Review D 108, 103019"
+  year: 2023
+  doi: "10.1103/PhysRevD.108.103019"
+  arxiv: "2303.15442"
+  tags: [methods]
+
+- id: pol2021
+  title: "Astrophysics milestones for pulsar timing array gravitational-wave detection"
+  authors: "N. S. Pol, **S. R. Taylor**, L. Z. Kelley, S. J. Vigeland, J. Simon, S. Chen, et al."
+  venue: "The Astrophysical Journal Letters 911, L34"
+  year: 2021
+  doi: "10.3847/2041-8213/abf2c9"
+  arxiv: "2010.11950"
+  tags: [nanohertz, binaries]
+  selected: true
+
+- id: vitale2021
+  title: "Inferring the properties of a population of compact binaries in presence of selection effects"
+  authors: "S. Vitale, D. Gerosa, W. M. Farr, **S. R. Taylor**"
+  venue: "Handbook of Gravitational Wave Astronomy (Springer)"
+  year: 2021
+  arxiv: "2007.05579"
+  tags: [lisa, methods]
+
+- id: nanograv12
+  title: "The NANOGrav 12.5 yr data set: search for an isotropic stochastic gravitational-wave background"
+  authors: "NANOGrav Collaboration: Z. Arzoumanian, P. T. Baker, H. Blumer, et al. (incl. **S. R. Taylor**)"
+  venue: "The Astrophysical Journal Letters 905, L34"
+  year: 2020
+  doi: "10.3847/2041-8213/abd401"
+  arxiv: "2009.04496"
+  role: "Chair, detection working group"
+  tags: [nanohertz]
+  selected: true
+
+- id: burkespolaor2019
+  title: "The astrophysics of nanohertz gravitational waves"
+  authors: "S. Burke-Spolaor, **S. R. Taylor**, M. Charisi, T. Dolch, J. S. Hazboun, et al."
+  venue: "Astronomy and Astrophysics Review 27, 5"
+  year: 2019
+  doi: "10.1007/s00159-019-0115-7"
+  arxiv: "1811.08826"
+  role: "Co-lead author · Review"
+  tags: [nanohertz, binaries]
+  selected: true
+
+- id: mingarelli2017
+  title: "The local nanohertz gravitational-wave landscape from supermassive black hole binaries"
+  authors: "C. M. F. Mingarelli, T. J. W. Lazio, A. Sesana, J. E. Greene, J. A. Ellis, C.-P. Ma, S. Croft, S. Burke-Spolaor, **S. R. Taylor**"
+  venue: "Nature Astronomy 1, 886"
+  year: 2017
+  doi: "10.1038/s41550-017-0299-6"
+  arxiv: "1708.03491"
+  tags: [binaries]
+  selected: true
+
+- id: lentati2015
+  title: "European Pulsar Timing Array limits on an isotropic stochastic gravitational-wave background"
+  authors: "L. Lentati, **S. R. Taylor**, C. M. F. Mingarelli, et al."
+  venue: "Monthly Notices of the Royal Astronomical Society 453, 2576"
+  year: 2015
+  doi: "10.1093/mnras/stv1538"
+  arxiv: "1504.03692"
+  role: "Core analysis team"
+  tags: [nanohertz]
+  selected: true
+
+- id: taylor2012sirens
+  title: "Cosmology with the lights off: standard sirens in the Einstein Telescope era"
+  authors: "**S. R. Taylor**, J. R. Gair"
+  venue: "Physical Review D 86, 023502"
+  year: 2012
+  doi: "10.1103/PhysRevD.86.023502"
+  arxiv: "1204.6739"
+  tags: [cosmology]
+  selected: true
+
+- id: taylor2012cosmo
+  title: "Cosmology using advanced gravitational-wave detectors alone"
+  authors: "**S. R. Taylor**, J. R. Gair, I. Mandel"
+  venue: "Physical Review D 85, 023535"
+  year: 2012
+  doi: "10.1103/PhysRevD.85.023535"
+  arxiv: "1108.5161"
+  tags: [cosmology]
+  selected: true

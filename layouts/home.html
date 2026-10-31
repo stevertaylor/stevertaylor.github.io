@@ -1,0 +1,185 @@
+{{- define "main" }}
+{{- $p := .Params }}
+
+{{- /* ── Hero ─────────────────────────────────────────────────────────── */}}
+<section class="hero" aria-labelledby="hero-name">
+  <canvas class="hero-layer" data-gw-hero aria-hidden="true"></canvas>
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow rise" style="--d: .05s">{{ $p.hero.eyebrow }}</p>
+      <h1 class="hero-name" id="hero-name">
+        {{- range $i, $w := split site.Title " " }}{{ if $i }} {{ end }}<span class="w"><span style="--i: {{ $i }}">{{ $w }}</span></span>{{ end -}}
+      </h1>
+      <p class="hero-role rise" style="--d: .38s">{{ site.Params.role }}<span class="hero-role-sep" aria-hidden="true"></span><span>{{ site.Params.institution }}</span></p>
+      <p class="hero-tagline rise" style="--d: .52s">{{ $p.hero.tagline }}</p>
+      <div class="hero-actions rise" style="--d: .66s">
+        <a class="btn btn-primary" href="{{ "/research/" | relURL }}">Explore my research{{ partial "icon.html" "arrow-right" }}</a>
+        <a class="btn btn-ghost" href="{{ site.Params.cv.url | relURL }}">Download CV{{ partial "icon.html" "download" }}</a>
+        <a class="btn btn-quiet" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero-foot rise" style="--d: .95s">
+    <div class="hero-readout" aria-hidden="true">
+      <p class="readout-label"><span>Waveform</span><span class="readout-sym"><i>h</i><sub>+</sub>(<i>t</i> − <i>r</i>/<i>c</i>)</span></p>
+      <canvas class="readout-trace" data-gw-readout></canvas>
+    </div>
+    <ul class="hero-roles">
+      {{- range site.Params.roles }}
+      <li><a class="role" href="{{ .url }}" rel="noopener"><span class="role-label">{{ .label }}</span><span class="role-org">{{ .org }}</span></a></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
+{{- /* ── About ────────────────────────────────────────────────────────── */}}
+<section class="section about" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <figure class="portrait reveal">
+      {{- partial "img.html" (dict "src" "images/bio_pic.jpg" "alt" "Stephen Taylor in front of a whiteboard covered in equations" "widths" (slice 560 1024) "sizes" "(min-width: 960px) 44vw, 100vw") }}
+    </figure>
+    <div class="about-copy reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title" id="about-title">{{ $p.about.title }}</h2>
+      <div class="prose prose-lead">{{ .Content }}</div>
+      <dl class="facts">
+        {{- range $p.about.facts }}
+        <div class="fact"><dt>{{ .label }}</dt><dd>{{ .value | markdownify }}</dd></div>
+        {{- end }}
+      </dl>
+      <div class="link-row">
+        <a class="text-link" href="{{ "/cv/" | relURL }}">Curriculum vitae{{ partial "icon.html" "arrow-right" }}</a>
+        <a class="text-link" href="{{ "/group/" | relURL }}">The VIPER group{{ partial "icon.html" "arrow-right" }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{- /* ── Research themes ──────────────────────────────────────────────── */}}
+<section class="section themes" id="research" aria-labelledby="research-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Research</p>
+        <h2 class="section-title" id="research-title">{{ $p.research.title }}</h2>
+      </div>
+      <p class="section-intro">{{ $p.research.intro }}</p>
+    </div>
+    <div class="cards">
+      {{- range $p.themes }}
+      <a class="card reveal" href="{{ .link | relURL }}">
+        <div class="card-art">{{ partial (printf "art/%s.html" .art) . }}</div>
+        <div class="card-body">
+          <p class="card-kicker">{{ .kicker }}</p>
+          <h3 class="card-title">{{ .title }}</h3>
+          <p class="card-text">{{ .text }}</p>
+          <span class="card-more">Read more{{ partial "icon.html" "arrow-right" }}</span>
+        </div>
+      </a>
+      {{- end }}
+    </div>
+    <p class="methods-line reveal">{{ $p.research.methods | markdownify }}</p>
+  </div>
+</section>
+
+{{- /* ── Landmark result ──────────────────────────────────────────────── */}}
+{{- with $p.feature }}
+<section class="feature" id="discovery" aria-labelledby="feature-title">
+  <div class="container feature-grid">
+    <div class="feature-copy reveal">
+      <p class="eyebrow">{{ .eyebrow }}</p>
+      <h2 class="section-title" id="feature-title">{{ .title }}</h2>
+      <div class="prose">{{ .text | markdownify }}</div>
+      {{- with .stats }}
+      <dl class="feature-stats">
+        {{- range . }}<div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
+      </dl>
+      {{- end }}
+      <div class="link-row">
+        {{- range .links }}
+        <a class="text-link" href="{{ .url }}" rel="noopener">{{ .label }}{{ partial "icon.html" "arrow-up-right" }}</a>
+        {{- end }}
+      </div>
+    </div>
+    <figure class="hd-figure reveal">
+      {{- partial "art/hd-curve.html" . }}
+      <figcaption>{{ .caption | markdownify }}</figcaption>
+    </figure>
+  </div>
+</section>
+{{- end }}
+
+{{- /* ── Speaking and press ───────────────────────────────────────────── */}}
+{{- with $p.speaking }}
+<section class="speaking" id="speaking" aria-labelledby="speaking-title">
+  <div class="still">
+    {{- partial "img.html" (dict "src" "images/speaking.jpg" "alt" .imageAlt "widths" (slice 960 1600 2400 3000) "sizes" "100vw" "class" "still-img") }}
+    <div class="container still-caption reveal">
+      <p class="eyebrow">Speaking</p>
+      <h2 class="section-title" id="speaking-title">{{ .title }}</h2>
+    </div>
+  </div>
+  <div class="container">
+    <ol class="talks reveal">
+      {{- range where hugo.Data.cv.talks "featured" true }}
+      <li class="talk">
+        <span class="talk-year">{{ .when }}</span>
+        <p class="talk-name">{{ .headline }}</p>
+        <p class="talk-venue">{{ .venue }}</p>
+        {{- with .video }}
+        <a class="talk-watch" href="{{ . }}" rel="noopener">Watch{{ partial "icon.html" "arrow-up-right" }}</a>
+        {{- end }}
+      </li>
+      {{- end }}
+    </ol>
+    <div class="link-row reveal">
+      <a class="text-link" href="{{ "/cv/#talks" | relURL }}">All invited talks{{ partial "icon.html" "arrow-right" }}</a>
+      <a class="text-link" href="mailto:{{ site.Params.email }}?subject=Speaking%20or%20media%20request">Speaking and media requests{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+
+    {{- with hugo.Data.press }}
+    <div class="press reveal">
+      <h3 class="press-label">{{ .label }}</h3>
+      <ul class="press-list">
+        {{- range .outlets }}
+        <li>{{ if .url }}<a href="{{ .url }}" rel="noopener"{{ with .title }} title="{{ . }}"{{ end }}>{{ .name }}</a>{{ else }}<span>{{ .name }}</span>{{ end }}</li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- /* ── Recognition ──────────────────────────────────────────────────── */}}
+<section class="section recognition" id="recognition" aria-labelledby="honors-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">Recognition</p>
+        <h2 class="section-title" id="honors-title">Selected honors</h2>
+      </div>
+      <a class="text-link" href="{{ "/cv/#honors" | relURL }}">All honors and awards{{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <ul class="honors reveal">
+      {{- range where hugo.Data.honors "featured" true }}
+      <li class="honor">
+        <span class="honor-year">{{ .year }}</span>
+        <div>
+          <p class="honor-title">{{ .title }}</p>
+          <p class="honor-org">{{ .org }}{{ with .note }} · {{ . }}{{ end }}</p>
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+{{- end }}
+
+{{- define "scripts" }}
+{{- $gw := resources.Get "js/gw-hero.js" | minify | fingerprint }}
+<script src="{{ $gw.RelPermalink }}" integrity="{{ $gw.Data.Integrity }}" defer></script>
+{{- end }}

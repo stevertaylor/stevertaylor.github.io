@@ -1,0 +1,10 @@
+{{- /* Inline stroke icons. Usage: partial "icon.html" "arrow-right" */ -}}
+{{- $paths := dict
+  "arrow-right"    `<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>`
+  "arrow-up-right" `<path d="M7 17 17 7"/><path d="M8 7h9v9"/>`
+  "download"       `<path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/>`
+  "copy"           `<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/>`
+  "check"          `<path d="m5 12.5 4.5 4.5L19 7.5"/>`
+-}}
+<svg class="icon icon-{{ . }}" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ index $paths . | safeHTML }}</svg>
+{{- /**/ -}}

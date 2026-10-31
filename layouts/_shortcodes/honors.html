@@ -1,0 +1,12 @@
+{{- /* Full honors list from data/honors.yaml: {{< honors >}} */ -}}
+<ul class="cv-list">
+  {{- range hugo.Data.honors }}
+  <li class="cv-item">
+    <span class="cv-when">{{ .year }}</span>
+    <div class="cv-what">
+      <p class="cv-title">{{ .title }}</p>
+      <p class="cv-org">{{ .org }}{{ with .note }} · {{ . }}{{ end }}</p>
+    </div>
+  </li>
+  {{- end }}
+</ul>

@@ -1,0 +1,6 @@
+{{- /* {{< button href="/cv.pdf" label="Download CV" icon="download" style="primary" >}} */ -}}
+{{- $href := .Get "href" -}}
+{{- $external := hasPrefix $href "http" -}}
+<a class="btn btn-{{ .Get "style" | default "ghost" }}" href="{{ if $external }}{{ $href }}{{ else }}{{ $href | relURL }}{{ end }}"{{ if $external }} rel="noopener"{{ end }}>
+  {{- .Get "label" }}{{ with .Get "icon" }}{{ partial "icon.html" . }}{{ end -}}
+</a>

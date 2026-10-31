@@ -1,69 +1,38 @@
 ---
 title: "Teaching"
-date: 2024-01-01
-draft: false
-description: "Courses taught at Vanderbilt University"
+description: "Courses in general relativity, cosmology, and astrostatistics at Vanderbilt University."
+heroImage: "images/psr.jpg"
+heroOpacity: 0.45
 ---
 
-## Courses at Vanderbilt University
+## Courses at Vanderbilt {#courses}
 
-### ASTR 3900 / 8090: General Relativity & Cosmology
-**Fall 2020 – Present**
+{{< course code="ASTR 3900 / 8090" title="General Relativity & Cosmology" terms="Fall 2020 – present" >}}
+Cross-listed introductory general relativity course covering special relativity and spacetime geometry, the Einstein field equations, black holes and gravitational waves, and cosmological models of the expanding universe.
 
-Cross-listed introductory general relativity course covering:
-- Special relativity and spacetime geometry
-- Einstein field equations
-- Black holes and gravitational waves
-- Cosmological models and the expanding universe
+[**Interactive demos**](https://stevertaylor.github.io/astr3900-demos/) — browser-based visualizations built lecture by lecture across the semester.
+{{< /course >}}
 
----
+{{< course code="ASTR 3970 / 8070" title="Astrostatistics" terms="Spring 2021 – present" >}}
+Cross-listed course on probability, statistical inference, data analysis, and machine learning. Highly interactive and centered around Jupyter notebooks; developed by Taylor.
 
-### ASTR 3970 / 8070: Astrostatistics
-**Spring 2021 – Present**
+Course materials on GitHub: [Spring 2025](https://github.com/VanderbiltAstronomy/astr_8070_s25) · [Spring 2024](https://github.com/VanderbiltAstronomy/astr_8070_s24) · [Spring 2022](https://github.com/VanderbiltAstronomy/astr_8070_s22) · [Spring 2021](https://github.com/VanderbiltAstronomy/astr_8070_s21)
+{{< /course >}}
 
-Cross-listed course on probability, statistical inference, data analysis, and machine learning. Highly interactive and centered around Jupyter notebooks. *Developed by Taylor.*
+{{< course code="ASTR 8001" title="Order of Magnitude Astrophysics" terms="Fall 2019 · guest lecturer, Fall 2021" >}}
+{{< /course >}}
 
-📚 **Course Materials on GitHub:**
-- [Spring 2025](https://github.com/VanderbiltAstronomy/astr_8070_s25)
-- [Spring 2024](https://github.com/VanderbiltAstronomy/astr_8070_s24)
-- [Spring 2022](https://github.com/VanderbiltAstronomy/astr_8070_s22)
-- [Spring 2021](https://github.com/VanderbiltAstronomy/astr_8070_s21)
+## Guest lecturing {#guest}
 
----
+- **California Institute of Technology** — PH237: Gravitational Waves (Spring 2016)
+- **Niels Bohr International Academy** — Gravitational-Wave Astrophysics (Summer 2021)
 
-### ASTR 8001: Order of Magnitude Astrophysics
-**Fall 2019** (Guest Lecturer: Fall 2021)
+## Textbook {#textbook}
 
----
+[*Nanohertz Gravitational Wave Astronomy*](https://www.routledge.com/Nanohertz-Gravitational-Wave-Astronomy/Taylor/p/book/9780367768621) (CRC Press, 2021) is a graduate-level introduction to pulsar timing arrays, used in courses worldwide.
 
-### Previous Teaching
-- **California Institute of Technology**: Guest Lecturer, PH237: Gravitational Waves (Spring 2016)
-- **Niels Bohr International Academy**: Guest Lecturer, Gravitational-Wave Astrophysics (Summer 2021)
+## Learning resources {#resources}
 
----
-
-## Research Mentorship
-
-### Current Postdoctoral Fellows
-- Matthew Miles (2025–present)
-- Alexander Criswell (2024–present)
-- Nima Laal (2023–present)
-
-### Former Postdocs (now faculty)
-- Nihan Pol → *Texas Tech University*
-- Maria Charisi → *Washington State & Institute of Astrophysics, FORTH*
-
-### Current Graduate Students
-- Sebastian Banaszak (2025–present)
-- Levi Schult (2022–present)
-- Polina Petrov (2021–present)
-- Kyle Gersbach (2021–present)
-- William Lamb (2020–present)
-
----
-
-## Book
-
-📘 **"Nanohertz Gravitational Wave Astronomy"**  
-Published November 24, 2021 by CRC Press (172 pp)  
-ISBN: 9780367768621
+- [Gravitational waves explained](https://www.ligo.caltech.edu/page/what-are-gw) — LIGO
+- [Pulsar timing arrays](https://nanograv.org/science/ptas) — NANOGrav
+- [Einstein Online](https://www.einstein-online.info/en/) — Max Planck Institute for Gravitational Physics

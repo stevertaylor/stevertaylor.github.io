@@ -1,0 +1,15 @@
+{{- define "main" }}
+{{- partial "page-hero.html" . }}
+<div class="page-body">
+  <div class="container">
+    <article class="prose prose-solo">
+      {{ .Content }}
+      {{- with .Pages }}
+      <ul>
+        {{- range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}
+      </ul>
+      {{- end }}
+    </article>
+  </div>
+</div>
+{{- end }}

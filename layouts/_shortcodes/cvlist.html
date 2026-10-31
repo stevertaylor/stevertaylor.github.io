@@ -1,0 +1,16 @@
+{{- /* A section of data/cv.yaml: {{< cvlist "appointments" >}} */ -}}
+{{- $section := index hugo.Data.cv (.Get 0) -}}
+{{- if not $section }}{{ errorf "cvlist: no section %q in data/cv.yaml (%s)" (.Get 0) .Position }}{{ end -}}
+<ul class="cv-list">
+  {{- range $section }}
+  <li class="cv-item">
+    <span class="cv-when">{{ .when }}</span>
+    <div class="cv-what">
+      <p class="cv-title">{{ .title | markdownify }}</p>
+      {{- with .org }}<p class="cv-org">{{ . | markdownify }}</p>{{ end }}
+      {{- with .note }}<p class="cv-note">{{ . | markdownify }}</p>{{ end }}
+      {{- with .video }}<p class="cv-note"><a href="{{ . }}" rel="noopener">Watch the recording</a></p>{{ end }}
+    </div>
+  </li>
+  {{- end }}
+</ul>

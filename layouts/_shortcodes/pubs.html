@@ -1,0 +1,33 @@
+{{- /*
+  Publication list from data/publications.yaml.
+  {{< pubs ids="nanograv15,taylor2025" >}}  — these entries, in this order
+  {{< pubs tag="nanohertz" >}}               — entries carrying that tag
+  {{< pubs selected="true" >}}               — entries marked selected: true
+*/ -}}
+{{- $items := hugo.Data.publications -}}
+{{- with .Get "ids" }}
+  {{- $picked := slice }}
+  {{- range split . "," }}
+    {{- $id := trim . " " }}
+    {{- with where hugo.Data.publications "id" $id }}{{ $picked = $picked | append (index . 0) }}{{ else }}{{ errorf "pubs: no publication with id %q" $id }}{{ end }}
+  {{- end }}
+  {{- $items = $picked }}
+{{- end -}}
+{{- with .Get "tag" }}{{ $items = where $items "tags" "intersect" (slice .) }}{{ end -}}
+{{- if eq (.Get "selected") "true" }}{{ $items = where $items "selected" true }}{{ end -}}
+<ol class="pubs">
+  {{- range $items }}
+  {{- $href := cond (isset . "doi") (printf "https://doi.org/%s" (.doi | default "")) (printf "https://arxiv.org/abs/%s" (.arxiv | default "")) }}
+  <li class="pub">
+    <a class="pub-title" href="{{ $href }}" rel="noopener">{{ .title }}</a>
+    <p class="pub-authors">{{ .authors | markdownify }}</p>
+    <p class="pub-meta">
+      <span class="pub-venue">{{ .venue }}</span>
+      <span class="pub-year">{{ .year }}</span>
+      {{- with .role }}<span class="pub-role">{{ . }}</span>{{ end }}
+      {{- with .doi }}<a class="pub-link" href="https://doi.org/{{ . }}" rel="noopener">DOI</a>{{ end }}
+      {{- with .arxiv }}<a class="pub-link" href="https://arxiv.org/abs/{{ . }}" rel="noopener">arXiv:{{ . }}</a>{{ end }}
+    </p>
+  </li>
+  {{- end }}
+</ol>

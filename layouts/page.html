@@ -1,0 +1,18 @@
+{{- define "main" }}
+{{- partial "page-hero.html" . }}
+<div class="page-body">
+  <div class="container">
+    {{- if .Params.toc }}
+    <div class="page-grid">
+      <aside class="toc" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        {{ .TableOfContents }}
+      </aside>
+      <article class="prose">{{ .Content }}</article>
+    </div>
+    {{- else }}
+    <article class="prose prose-solo">{{ .Content }}</article>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

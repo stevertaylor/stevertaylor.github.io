@@ -1,0 +1,74 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ if .IsHome }}{{ site.Title }} — Gravitational-wave astrophysicist, Vanderbilt University{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="theme-color" content="#05070d">
+<meta name="color-scheme" content="dark">
+<script>document.documentElement.classList.replace('no-js', 'js')</script>
+
+<link rel="icon" href="{{ "images/favicon.ico" | relURL }}" sizes="32x32">
+<link rel="icon" href="{{ "images/favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "images/apple-touch-icon.png" | relURL }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&display=swap">
+{{- $css := resources.Get "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- if .IsHome }}
+<script>
+  // The hero title sequence waits for the display face (at most 1.2 s), so the name never
+  // swaps fonts mid-animation. Placed after the stylesheets so the @font-face rules exist.
+  (function (d) {
+    var e = d.documentElement, go = function () { e.classList.add('fonts-ready'); };
+    try {
+      Promise.race([d.fonts.load('400 1em "Instrument Serif"'), new Promise(function (r) { setTimeout(r, 1200); })]).then(go, go);
+    } catch (err) { go(); }
+  })(document);
+</script>
+{{- end }}
+
+{{- partial "opengraph.html" . }}
+{{- partial "twitter_cards.html" . }}
+
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Stephen R. Taylor",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Associate Professor of Physics and Astronomy",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Vanderbilt University",
+    "url": "https://www.vanderbilt.edu"
+  },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Cambridge" },
+    { "@type": "CollegeOrUniversity", "name": "University of Oxford" }
+  ],
+  "email": "mailto:{{ site.Params.email }}",
+  "url": "{{ site.BaseURL }}",
+  "image": "{{ "images/bio_pic.jpg" | absURL }}",
+  "description": "Associate Professor at Vanderbilt University and gravitational wave astrophysicist. Director of VIPER, Chair of the NANOGrav Collaboration, and ESA-NASA LISA Science Team member.",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=iN2djBMAAAAJ&hl=en",
+    "https://github.com/stevertaylor",
+    "https://linkedin.com/in/stephen-taylor-a8164787",
+    "https://as.vanderbilt.edu/viper/"
+  ],
+  "knowsAbout": [
+    "Gravitational Wave Astronomy",
+    "Pulsar Timing Arrays",
+    "NANOGrav",
+    "LISA",
+    "Bayesian Statistics",
+    "Astrostatistics",
+    "Supermassive Black Holes"
+  ]
+}
+</script>
+{{- end }}

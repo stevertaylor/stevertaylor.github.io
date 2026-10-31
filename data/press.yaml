@@ -1,0 +1,22 @@
+# Press coverage shown on the homepage: the outlets listed in the CV (January 2026), plus Quanta.
+# BBC News NI (profile, 2 July 2023), Scientific American, Quanta and National Geographic were
+# checked and name or quote Stephen Taylor. Washington Post and Guardian could not be read
+# automatically, so they are left unlinked until checked by hand:
+#   https://www.washingtonpost.com/science/2023/06/28/gravitational-wave-background-nanograv/
+#   https://www.theguardian.com/science/2023/jun/29/astronomers-detect-cosmic-bass-note-gravitational-waves
+label: "In the press"
+outlets:
+  - name: "BBC News"
+    url: "https://www.bbc.com/news/uk-northern-ireland-66046717"
+    title: "Northern Ireland scientist's role in black hole shock-waves find"
+  - name: "Scientific American"
+    url: "https://www.scientificamerican.com/article/a-background-hum-pervades-the-universe-scientists-are-racing-to-find-its-source/"
+    title: "A Background 'Hum' Pervades the Universe. Scientists Are Racing to Find Its Source (August 2023)"
+  - name: "Quanta Magazine"
+    url: "https://www.quantamagazine.org/an-enormous-gravity-hum-moves-through-the-universe-20230628/"
+    title: "An Enormous Gravity 'Hum' Moves Through the Universe (June 2023)"
+  - name: "The Washington Post"
+  - name: "The Guardian"
+  - name: "National Geographic"
+    url: "https://www.nationalgeographic.com/premium/article/colossal-gravitational-waves-found-for-the-first-time"
+    title: "Colossal gravitational waves—trillions of miles long—found for the first time (June 2023)"

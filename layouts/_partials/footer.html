@@ -1,0 +1,46 @@
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-main">
+        <p class="eyebrow">Contact</p>
+        <h2 class="contact-title">Get in touch</h2>
+        <div class="contact-email-row">
+          <a class="contact-email" href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+          <button class="copy-btn" type="button" data-copy="{{ site.Params.email }}">
+            {{- partial "icon.html" "copy" }}<span data-copy-label>Copy</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="contact-col">
+        <h3 class="contact-label">Address</h3>
+        <address>
+          {{- range site.Params.address }}{{ . }}<br>{{ end -}}
+        </address>
+      </div>
+
+      <div class="contact-col">
+        <h3 class="contact-label">Elsewhere</h3>
+        <ul class="contact-links">
+          {{- range site.Params.profiles }}
+          <li><a href="{{ .url }}" rel="noopener">{{ .name }}{{ partial "icon.html" "arrow-up-right" }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {{ now.Year }} {{ site.Params.author }}</p>
+      <nav aria-label="Footer">
+        <ul class="footer-nav">
+          {{- range site.Menus.main }}
+          {{- if not (hasPrefix .URL "#") }}
+          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{- end }}
+          {{- end }}
+          <li><a href="{{ site.Params.cv.url | relURL }}">CV (PDF)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,2 @@
+<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text }}{{ if eq .Level 2 }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-label="Link to this section"></a>{{ end }}</h{{ .Level }}>
+{{- /**/ -}}

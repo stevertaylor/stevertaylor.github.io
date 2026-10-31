@@ -1,0 +1,76 @@
+# Honors & awards (source: CV, January 2026).
+# `featured: true` entries appear on the homepage; all appear on the CV page.
+# (The Eddington and Kavli lectureships are shown under Speaking on the homepage instead.)
+
+- year: "2025"
+  title: "Bruno Rossi Prize"
+  org: "American Astronomical Society"
+  note: "with the NANOGrav Collaboration"
+  featured: true
+
+- year: "2025"
+  title: "Chancellor's Award for Research"
+  org: "Vanderbilt University"
+  featured: true
+
+- year: "2025–27"
+  title: "Chancellor's Faculty Fellowship"
+  org: "Vanderbilt University"
+
+- year: "2024"
+  title: "Top 1% Cited Paper Award (North America)"
+  org: "IOP Publishing"
+
+- year: "2024"
+  title: "ESA–NASA LISA Science Team"
+  org: "NASA appointee — one of six US scientists"
+  featured: true
+
+- year: "2024"
+  title: "Frontiers of Science Award in Theoretical Physics"
+  org: "International Congress of Basic Science"
+  featured: true
+
+- year: "2024"
+  title: "Eddington Lecturer"
+  org: "University of Cambridge & Royal Astronomical Society"
+
+- year: "2024"
+  title: "Fred Kavli Plenary Lectureship"
+  org: "American Astronomical Society"
+
+- year: "2021"
+  title: "NSF CAREER Award"
+  org: "National Science Foundation"
+  featured: true
+
+- year: "2019"
+  title: "Visiting Astronomer"
+  org: "Observatoire de Paris"
+
+- year: "2019–21"
+  title: "Dean's Faculty Fellowship"
+  org: "Vanderbilt University College of Arts & Science"
+
+- year: "2017"
+  title: "Marie Skłodowska-Curie Incoming Fellowship"
+  org: "University of Birmingham"
+  note: "declined"
+
+- year: "2017"
+  title: "OzGrav ARC Centre of Excellence Fellowship"
+  org: "Swinburne & Monash Universities"
+  note: "declined"
+
+- year: "2016"
+  title: "IPTA Steering Committee Prize — Honorable Mention"
+  org: "International Pulsar Timing Array"
+
+- year: "2016"
+  title: "GWIC Thesis Prize — Honorable Mention"
+  org: "Gravitational Wave International Committee"
+
+- year: "2014"
+  title: "NASA Postdoctoral Fellowship"
+  org: "Jet Propulsion Laboratory"
+  featured: true

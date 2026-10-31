@@ -1,0 +1,13 @@
+{{- /*
+  {{< course code="ASTR 3900 / 8090" title="General Relativity & Cosmology" terms="Fall 2020 – present" >}}
+  Markdown description…
+  {{< /course >}}
+*/ -}}
+<div class="course">
+  <div class="course-head">
+    <p class="course-code">{{ .Get "code" }}</p>
+    <h3 class="course-title" id="{{ .Get "title" | anchorize }}">{{ .Get "title" }}</h3>
+    {{- with .Get "terms" }}<p class="course-terms">{{ . }}</p>{{ end }}
+  </div>
+  <div class="course-body">{{ .Inner | .Page.RenderString (dict "display" "block") }}</div>
+</div>

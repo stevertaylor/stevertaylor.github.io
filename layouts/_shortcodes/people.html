@@ -1,0 +1,16 @@
+{{- /* Group roster from data/group.yaml: {{< people >}} */ -}}
+{{- range hugo.Data.group }}
+<section class="people-group">
+  <h2 id="{{ .title | anchorize }}">{{ .title }}</h2>
+  <ul class="people">
+    {{- range .people }}
+    <li class="person">
+      <p class="person-name">{{ with .url }}<a href="{{ . }}" rel="noopener">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}</p>
+      {{- with .role }}<p class="person-role">{{ . }}</p>{{ end }}
+      {{- with .years }}<p class="person-years">{{ . }}</p>{{ end }}
+      {{- with .now }}<p class="person-now">Now: {{ . }}</p>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{- end }}

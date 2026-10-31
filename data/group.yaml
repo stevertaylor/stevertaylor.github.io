@@ -1,0 +1,54 @@
+# VIPER research group roster, rendered on /group/ via {{< people >}}.
+
+- title: "Postdoctoral researchers"
+  people:
+    - name: "Matthew Miles"
+      role: "NANOGrav PFC Postdoctoral Fellow"
+      years: "2025–"
+    - name: "Alexander Criswell"
+      role: "EMIT Postdoctoral Fellow"
+      years: "2024–"
+    - name: "Maria Jose Bustamante Rosell"
+      role: "Postdoctoral Researcher"
+      years: "2024–"
+    - name: "Robbie Rosati"
+      role: "Postdoctoral Researcher"
+      years: "2024–"
+    - name: "Nima Laal"
+      role: "VIPER Postdoctoral Fellow"
+      years: "2023–"
+
+- title: "Graduate researchers"
+  people:
+    - name: "Sebastian Banaszak"
+      years: "2025–"
+    - name: "Levi Schult"
+      years: "2022–"
+    - name: "Polina Petrov"
+      years: "2021–"
+    - name: "Kyle Gersbach"
+      years: "2021–"
+    - name: "William Lamb"
+      years: "2020–"
+    - name: "Riddhi Patel"
+      role: "Fisk–Vanderbilt Bridge Program"
+
+- title: "Undergraduate researchers"
+  people:
+    - name: "Tejas Mahesh"
+
+- title: "Former postdocs"
+  people:
+    - name: "Nihan Pol"
+      now: "Assistant Professor, Texas Tech University"
+    - name: "Maria Charisi"
+      now: "Assistant Professor, Washington State University & Institute of Astrophysics, FORTH"
+
+- title: "Affiliated faculty"
+  people:
+    - name: "Jessie Runnoe"
+      role: "Assistant Professor of Physics & Astronomy"
+      url: "https://as.vanderbilt.edu/physics-astronomy/"
+    - name: "Kelly Holley-Bockelmann"
+      role: "Stevenson Professor of Physics & Astronomy"
+      url: "https://as.vanderbilt.edu/physics-astronomy/"

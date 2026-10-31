@@ -1,0 +1,25 @@
+{{- /*
+  Responsive WebP image from assets (static/images is mounted at assets/images).
+  Params: src, alt, widths (slice), sizes, loading, class
+*/ -}}
+{{- $img := resources.Get .src -}}
+{{- if $img -}}
+  {{- $set := slice -}}
+  {{- $last := false -}}
+  {{- range (.widths | default (slice 640 1024 1600)) -}}
+    {{- if le . $img.Width -}}
+      {{- $r := $img.Resize (printf "%dx webp q82" .) -}}
+      {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+      {{- $last = $r -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $last -}}
+    {{- $last = $img.Resize (printf "%dx webp q82" $img.Width) -}}
+    {{- $set = slice (printf "%s %dw" $last.RelPermalink $last.Width) -}}
+  {{- end -}}
+  <img src="{{ $last.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ .sizes | default "100vw" }}"
+    width="{{ $last.Width }}" height="{{ $last.Height }}" alt="{{ .alt }}"
+    loading="{{ .loading | default "lazy" }}" decoding="async"{{ with .class }} class="{{ . }}"{{ end }}>
+{{- else -}}
+  {{- warnf "img.html: image %q not found" .src -}}
+{{- end -}}
