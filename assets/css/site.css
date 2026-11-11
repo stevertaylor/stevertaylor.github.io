@@ -772,7 +772,13 @@ body::after {
 .people-group { margin-top: 2.4em; }
 .prose .people { list-style: none; padding-left: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin-top: 1.2em; }
 .prose .person + .person { margin-top: 0; }
-.person { padding: 18px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.person { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.person-body { padding: 18px 20px; }
+.prose .people.has-photos { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.person-photo { position: relative; aspect-ratio: 4 / 5; background: var(--bg-2); border-bottom: 1px solid var(--line); }
+.person-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; filter: grayscale(1) contrast(1.06) brightness(0.92); transition: filter 0.5s ease; }
+.person:hover .person-photo img { filter: none; }
+.person-initials { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-display); font-size: 2.6rem; letter-spacing: 0.04em; color: var(--text-3); opacity: 0.55; }
 .person-name { font-weight: 500; color: var(--text); }
 .person-role { margin-top: 2px; font-size: 0.9rem; line-height: 1.45; color: var(--text-2); }
 .person-years { margin-top: 8px; }
@@ -835,6 +841,8 @@ body::after {
 
 @media (max-width: 600px) {
   :root { --header-h: 64px; }
+  .prose .people.has-photos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .has-photos .person-body { padding: 12px 14px; }
   .wordmark { font-size: 1.4rem; }
   .hero-role { flex-direction: column; align-items: flex-start; gap: 2px; }
   .hero-role-sep { display: none; }

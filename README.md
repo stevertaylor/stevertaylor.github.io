@@ -19,7 +19,7 @@ hugo server            # http://localhost:1313, rebuilds on save
 | Research / Publications / Group / Teaching / CV pages | `content/*.md`                    |
 | Honors (homepage shows `featured: true`)      | `data/honors.yaml`                     |
 | Selected papers (by `id`, `tags`, `selected`) | `data/publications.yaml`               |
-| Group roster                                  | `data/group.yaml`                      |
+| Group roster (optional `photo` per person, in `static/images/group/`) | `data/group.yaml` |
 | CV highlights (appointments, talks, funding…) | `data/cv.yaml`                         |
 | Homepage lectures (talks with `featured: true`; optional `video`) | `data/cv.yaml` (`talks`) |
 | Homepage press strip (outlets, optional article links) | `data/press.yaml` |
@@ -31,5 +31,3 @@ hugo server            # http://localhost:1313, rebuilds on save
 Images in `static/images/` keep their public URLs and are also converted to responsive WebP at
 build time. The card illustrations and the Hellings–Downs figure in `layouts/_partials/art/` are
 generated SVG.
-
-The site no longer uses the PaperMod theme; `themes/PaperMod` is an unused submodule that can be removed.

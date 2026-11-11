@@ -1,14 +1,26 @@
-{{- /* Group roster from data/group.yaml: {{< people >}} */ -}}
+{{- /* Group roster from data/group.yaml: {{< people >}}. A group shows photo cards if any member has a `photo`. */ -}}
 {{- range hugo.Data.group }}
+{{- $photos := where .people "photo" "!=" nil }}
 <section class="people-group">
   <h2 id="{{ .title | anchorize }}">{{ .title }}</h2>
-  <ul class="people">
+  <ul class="people{{ if $photos }} has-photos{{ end }}">
     {{- range .people }}
     <li class="person">
-      <p class="person-name">{{ with .url }}<a href="{{ . }}" rel="noopener">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}</p>
-      {{- with .role }}<p class="person-role">{{ . }}</p>{{ end }}
-      {{- with .years }}<p class="person-years">{{ . }}</p>{{ end }}
-      {{- with .now }}<p class="person-now">Now: {{ . }}</p>{{ end }}
+      {{- if $photos }}
+      <div class="person-photo">
+        {{- with .photo }}
+        {{- partial "img.html" (dict "src" . "alt" "" "widths" (slice 320 600) "sizes" "(min-width: 600px) 260px, 50vw") }}
+        {{- else }}
+        <span class="person-initials" aria-hidden="true">{{ range split .name " " }}{{ substr . 0 1 }}{{ end }}</span>
+        {{- end }}
+      </div>
+      {{- end }}
+      <div class="person-body">
+        <p class="person-name">{{ with .url }}<a href="{{ . }}" rel="noopener">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}</p>
+        {{- with .role }}<p class="person-role">{{ . }}</p>{{ end }}
+        {{- with .years }}<p class="person-years">{{ . }}</p>{{ end }}
+        {{- with .now }}<p class="person-now">Now: {{ . }}</p>{{ end }}
+      </div>
     </li>
     {{- end }}
   </ul>

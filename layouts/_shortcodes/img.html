@@ -1,4 +1,4 @@
-{{- /* {{< img src="images/pta_champion.png" alt="…" caption="…" >}} */ -}}
+{{- /* {{< img src="images/pta_champion.jpg" alt="…" caption="…" >}} */ -}}
 <figure class="figure">
   {{- partial "img.html" (dict "src" (.Get "src") "alt" (.Get "alt") "widths" (slice 720 1100 1440) "sizes" "(min-width: 800px) 720px, 100vw") }}
   {{- with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}

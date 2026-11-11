@@ -91,9 +91,12 @@ menu:
     - name: "Teaching"
       url: "/teaching/"
       weight: 4
+    - name: "Speaking"
+      url: "/#speaking"
+      weight: 5
     - name: "CV"
       url: "/cv/"
-      weight: 5
+      weight: 6
     - name: "Contact"
       url: "#contact"
-      weight: 6
+      weight: 7

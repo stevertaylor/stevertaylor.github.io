@@ -13,7 +13,7 @@ I direct the [**Vanderbilt Initiative for Probes of Extreme Relativity (VIPER)**
 
 ## Nanohertz gravitational waves {#nanohertz}
 
-{{< img src="images/pta_champion.png" alt="Illustration of a pulsar timing array: Earth at the center of a distorted spacetime grid, with lines to pulsars around it" caption="A pulsar timing array: gravitational waves passing between Earth and the pulsars perturb the arrival times of their pulses." >}}
+{{< img src="images/pta_champion.jpg" alt="Illustration of a pulsar timing array: Earth at the center of a distorted spacetime grid, with lines to pulsars around it" caption="A pulsar timing array: gravitational waves passing between Earth and the pulsars perturb the arrival times of their pulses." >}}
 
 The main thrust of my research is **searching for nanohertz gravitational waves** from distant sources using a web of Milky Way pulsars (a Pulsar Timing Array), and unveiling the properties of the supermassive black holes, cosmic strings, or early Universe processes that produce these GWs.
 

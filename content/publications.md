@@ -4,13 +4,13 @@ description: "Selected papers on pulsar timing arrays, supermassive black-hole b
 heroImage: "images/notes.jpg"
 heroOpacity: 0.3
 metrics:
-  - value: "17,000+"
+  - value: "20,500+"
     label: "Citations"
-  - value: "60"
+  - value: "61"
     label: "h-index"
-  - value: "102"
+  - value: "114"
     label: "i10-index"
-metricsNote: "Google Scholar, January 2026"
+metricsNote: "Google Scholar, November 2026"
 ---
 
 {{< stats >}}
