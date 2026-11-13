@@ -34,6 +34,7 @@
       photo: "images/group/kyle-gersbach.jpg"
       years: "2021–"
     - name: "Riddhi Patel"
+      photo: "images/group/riddhi-patel.jpg"
       role: "Fisk–Vanderbilt Bridge Program"
 
 - title: "Undergraduate researchers"
@@ -44,8 +45,10 @@
 - title: "Former postdocs"
   people:
     - name: "Nihan Pol"
+      photo: "images/group/nihan-pol.jpg"
       now: "Assistant Professor, Texas Tech University"
     - name: "Maria Charisi"
+      photo: "images/group/maria-charisi.jpg"
       now: "Assistant Professor, Washington State University & Institute of Astrophysics, FORTH"
 
 - title: "Former graduate researchers"
