@@ -1,4 +1,5 @@
 {{- /* Group roster from data/group.yaml: {{< people >}}. A group shows photo cards if any member has a `photo`. */ -}}
+<div class="roster">
 {{- range hugo.Data.group }}
 {{- $photos := where .people "photo" "!=" nil }}
 <section class="people-group">
@@ -9,7 +10,7 @@
       {{- if $photos }}
       <div class="person-photo">
         {{- with .photo }}
-        {{- partial "img.html" (dict "src" . "alt" "" "widths" (slice 320 600) "sizes" "(min-width: 600px) 260px, 50vw") }}
+        {{- partial "img.html" (dict "src" . "alt" "" "widths" (slice 320 600) "sizes" "(min-width: 600px) 170px, 50vw") }}
         {{- else }}
         <span class="person-initials" aria-hidden="true">{{ range split .name " " }}{{ substr . 0 1 }}{{ end }}</span>
         {{- end }}
@@ -26,3 +27,4 @@
   </ul>
 </section>
 {{- end }}
+</div>

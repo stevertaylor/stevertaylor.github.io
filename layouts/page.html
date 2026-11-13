@@ -11,7 +11,7 @@
       <article class="prose">{{ .Content }}</article>
     </div>
     {{- else }}
-    <article class="prose prose-solo">{{ .Content }}</article>
+    <article class="prose {{ if .Params.wide }}prose-wide{{ else }}prose-solo{{ end }}">{{ .Content }}</article>
     {{- end }}
   </div>
 </div>
